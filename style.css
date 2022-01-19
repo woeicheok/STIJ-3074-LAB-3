@@ -1,0 +1,29 @@
+.w3-grid-template{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 600px) {
+    .w3-grid-template {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .w3-grid-template {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    body{
+        max-width: 70%;
+        margin: auto;
+    }
+    .w3-grid-template {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
